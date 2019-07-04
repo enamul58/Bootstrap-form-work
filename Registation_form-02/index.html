@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="inc/bootstrap.min.css">
+	<script src="inc/jquery.min.js"></script> 
+	<script type="text/javascript" src="inc/bootstrap.min.js"></script>
+
+		 <style type="text/css">
+        .img-center {
+            margin: 0 auto;
+        }
+        .well-margin {
+            margin: 0;
+            margin-top: 5px;
+
+
+        }
+        .input_field input {
+            width: 100%;
+        }
+        input.input_type {
+            width: 20px;
+            padding: 0px;
+        }
+        .h2_order {
+            width: 100%;
+            height: auto;
+            float: left;
+            background: #f5f5f5;
+            border: solid 1px #d7d7d7;
+            color: #000;
+            margin-top: 4px;
+            font-size: 22px;
+            padding: 4px;
+        }
+        .top_check {
+            width: 100%;
+            height: auto;
+            float: left;
+        }
+        .new_area {
+            width: 100%;
+            float: left;
+            padding-left: 16px;
+        }
+        .thead-default th {
+            background-color: #1E90FF;
+        }
+        .right_table input {
+            width: 100%;
+        }
+        .right_table select {
+            width: 100%;
+        }
+        .input_field, .right_table{ padding-left: 0px; }
+        input.input_search{ width: 90%; float: left; }
+        .btn_c {
+            width: 10%;
+            height: 27px;
+            border-radius: 0px;
+            padding: 0px;
+            font-size: 18px;
+            font-weight: bold;
+            }
+        .btn_cls{
+            padding: 3px 5px;
+        }
+
+        /*td{ padding: 1px !important; }*/
+    </style>
+
+</head>
+<body>
+    <!-- container -->
+    <div class="container-fluid" style="margin-top: 10px">
+        <div class="row">
+            <!-- parent_column -->
+            <div class="col-md-12 parent_column">
+                <!-- panel_head -->
+                <div class="panel panel-success">
+                    <div class="panel-heading"> 
+                        <strong>Purchase Requsitioncon</strong>      
+                    </div>
+                    <!-- panel_title -->
+                    <div class="panel-body">
+                        <!-- nav-->
+                        <ul class="nav nav-tabs">  
+                            <li class="active">
+                                <a data-toggle="tab" href="#requsition">purchase requsition </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#station">purchase station </a>
+                            </li>  
+                        </ul>
+                        <!-- tab  -->
+                        <div class="tab-content">
+                            <div id="requsition" role="tabpanel" class="tab-pane active">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <!-- chil_column_1 -->
+                                        <div class="col-md-4 input_field">
+                                            <!-- well_btn -->
+                                            <div class="well well-sm well-margin">
+                                                <tr>
+                                                    <td>
+                                                        <input class="input_type" type="radio" name="radi">All
+                                                    </td>
+                                                    <td>
+                                                        <input class="input_type" type="radio" name="radi">Approved
+                                                    </td>
+                                                    <td>
+                                                        <input class="input_type" type="radio" name="radi">Unapproved
+                                                        <td>
+                                                        </tr>
+                                                        <br/>
+                                                        <tr>
+                                                            <td>
+                                                                <input class="input_type" type="checkbox" name="chkbx">Won Requsition Only
+                                                            </td>
+                                                        </tr>
+                                                    </div>
+                                                    <!-- Purchase_info -->
+                                                    <div class="info">
+                                                        <table class="table table-responsive table-condensed table-bordered">
+                                                            <tr>
+                                                                <td>Form:</td>
+                                                                <td>
+                                                                    <input type="Date" name="from" style="width: 135px !important;">
+                                                                </td>
+
+                                                                <td>To:</td>
+                                                                <td>
+                                                                    <input type="Date" name="to" style="width: 143px !important;">
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>Store</td>
+                                                                <td colspan="3">
+                                                                    <input type="text" name="to">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Store</td>
+                                                                <td colspan="3">
+                                                                    <input type="text" name="to">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4">
+                                                                    <input class="input_search" type="text" name="to"> <button type="button" class="btn btn-danger btn_c">c</button>
+                                                                </td>
+                                                                
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <!-- list_data -->
+                                                    <div class="list_data">
+                                                        <table class="table table-responsive table-striped table-condensed">
+                                                            <tr>
+                                                                <td>Manual </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Active</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Manual </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Active</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Manual </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Active</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>    
+
+                                                <!-- chil_column_2 -->
+                                                <div class="col-md-8">
+                                                    <h2 class="h2_order">order Info:</h2>
+
+                                                    <!-- sub_column_1 -->
+                                                    <!-- order_info -->
+                                                    <div class="col-md-8 right_table">
+                                                        <table class="table table-responsive table-bordered table-condensed table-hover">
+                                                            <tr>
+                                                                <th style="width: 100px;">Req No</th>
+                                                                <td><input type="text" name="firstname"></td>
+
+                                                                <th>Date:</th>
+                                                                <td><input type="text" name="lastname"></td>      
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Form Store</th>              
+                                                                <td colspan="3">
+                                                                    <select> 
+                                                                        <option value="" disabled selected style="display: none;">Current title</option>
+                                                                        <option value="opt1">Option 1</option>
+                                                                        <option value="opt2">Option 2</option>
+                                                                    </select>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th> To Company </th>
+                                                                <td colspan="3">
+                                                                    <select>
+                                                                        <option value="" disabled selected style="display: none;">Current title</option>
+                                                                        <option value="opt1">Option 1</option>
+                                                                        <option value="opt2">Option 2</option>
+                                                                    </select>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Exp.Date </th>
+                                                                <td><input type="Date" name="working"></td>     
+                                                                <th>Del.status</th>
+                                                                    <td>
+                                                                        <select>
+                                                                            <option value="" disabled selected style="display: none;">Current title</option>
+                                                                            <option value="opt1">Option 1</option>
+                                                                            <option value="opt2">Option 2</option>
+                                                                        </select>
+                                                                    </td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <th>Description</th>
+                                                               
+                                                                 <td colspan="3"><input type="text" name="working">
+                                                                 </td>       
+                                                             </tr>
+                                                             <tr>
+                                                                 <th>Item Type</th>
+                                                                 <td colspan="3">
+                                                                     <select>
+                                                                     
+                                                                         <option value="" disabled selected style="display: none;">Current title</option>
+                                                                     
+                                                                         <option value="opt1">Option 1</option>
+                                                                     
+                                                                         <option value="opt2">Option 2</option>
+                                                                     </select>
+                                                                 </td>
+                                                             </tr>
+                                                        </table>
+                                                    </div> 
+
+                                                    <!-- new_requsition -->
+                                                    <!-- sub_column_2 -->
+                                                    <div class="col-md-4 sub_column_2">
+                                                        <p class="top_check"> <input type="checkbox" name="">Approve</p>
+                                                        <div class="new_area">
+                                                            <p>Won Requstion</p>
+                                                            <p>New Requstion</p>
+                                                            <button type="button" class="btn btn-success">New Requstion</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- itme_table -->
+                                                    <div class="item_table">
+                                                        <table class="table table-responsive table-bordered table-condensed table-hover">
+                                                            <thead class="thead-default">
+                                                                <tr>
+                                                                    <th>Item Type</th>
+                                                                    <th>Item No</th>
+                                                                    <th>Test Name</th>
+                                                                    <th>Uom</th>
+                                                                    <th>Pack</th>
+                                                                    <th>Stock Qty</th>
+                                                                    <th>Req Qty</th>
+                                                                    <th>
+                                                                        <button type="button" class="btn btn-danger btn_cls"> &times; </button>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                      </div>
+                 </div>
+             <div>
+        </div>
+     </body>
+ </html>
+
+
+
+

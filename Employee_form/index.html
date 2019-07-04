@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="inc/bootstrap.min.css">
+	<script src="inc/jquery.min.js"></script> 
+	<script type="text/javascript" src="inc/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			 .right_table input{
+			 	width: 100%;
+			 }
+			.table > thead > tr > th,
+			.table > tbody > tr > th,
+			.table > tfoot > tr > th,
+			.table > thead > tr > td,
+			.table > tbody > tr > td,
+			.table > tfoot > tr > td {
+			  padding: 3px;
+			  line-height: 1.42857143;
+			  vertical-align: top;
+			  border-top: 1px solid #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid" style="margin-top: 20px">
+			<div class="row">                                                                                               
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<button type="button" class="btn">
+	                                    <span class="glyphicon glyphicon-plus"
+	                                          aria-hidden="true"></span>
+	                                    Add New Employee
+								    </button>
+								</div>
+								<div class="panel-body">
+									<div class="col-md-4 right_table">
+										<table class="table table-responsive table-bordered table-hover">
+											<tr>
+												<th>Name</th>
+												<td><input type="text" name="nme"></td>
+											</tr>
+											<tr>
+												<th>Company</th>
+												<td><input type="text" name="cpy"></td>
+											</tr>	
+											
+										</table>	
+									</div>
+									<div class="col-md-4 right_table">
+										<table class="table table-responsive table-bordered table-hover">
+											<tr>
+												<th>Employee Id</th>
+												<td><input type="text" name="eply_id"></td>
+											</tr>
+											<tr>	
+												<th>Department</th>
+												<td><input type="text" name="department"></td>
+											</tr>
+										</table>
+									</div>
+									<div class="col-md-4 right_table">
+										<table class="table table-responsive table-bordered table-hover">
+											<tr>
+												<th>Date Of Join</th>
+												<td><input type="text" name="nme"></td></td>
+											</tr>
+											<tr>
+												<th>Designation</th>
+												<td><input type="text" name="nme"></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="panel-footer">
+									<!-- <table class="table table-responsive"> -->	
+									<div class="row">
+					                   <div class="col col-xs-6">
+											<tr>
+												<td><input style="width: 20px" type="radio" name="rdo"> Active</td>
+												<td><input style="width: 20px" type="radio" name="rdo"> Inactive</td>   
+											</tr>
+					                   </div>
+					                   <div class="col col-xs-offset-3  col-xs-3">
+					                       <div class="pull-right">
+					                           <button type="button" class="btn">
+					                               <span class="glyphicon glyphicon-search"
+					                                     aria-hidden="true"></span>
+					                               Search
+					                           </button>
+					                       </div>
+					                   </div>
+					                </div>
+									<!-- </table> -->					 		
+								</div><!-- end_footer -->
+							</div><!-- end_panel-default -->
+						</div><!-- end_col-md-12 -->	
+					</div><!-- end_row_01 -->
+
+					<!-- row_02 -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<strong> Employee Information Details </strong>
+								</div>
+
+								<div class="panel-body">
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover">
+										<tr>
+											<th>Id</th>
+											<th>Name</th>
+											<th>Designation</th>
+											<th>Department</th>
+											<th>Company</th>
+											<th>Date of Join</th>
+											<th>Status</th>
+											<th>Edit</th>
+											<th>View</th>
+										</tr>
+										<tr>
+											<td>12-0484-002</td>
+											<td>Md.Masud Ahmed</td>
+											<td>Wed Designer</td>
+											<td>Development</td>
+											<td>MySoftLimited</td>
+											<td>17 April 2017</td>
+											<td>Active</td>
+											<td><button type="button" name="btn">Edit</button></td>
+											<td><button type="button" name="btn">View</button></td>
+										</tr>
+										<tr>
+											<td>12-0484-002</td>
+											<td>Md.Masud Ahmed</td>
+											<td>Wed Designer</td>
+											<td>Development</td>
+											<td>MySoftLimited</td>
+											<td>17 April 2017</td>
+											<td>Active</td>
+											<td><button type="button" name="btn">Edit</button></td>
+											<td><button type="button" name="btn">View</button></td>
+										</tr>
+										<tr>
+											<td>12-0484-002</td>
+											<td>Md.Masud Ahmed</td>
+											<td>Wed Designer</td>
+											<td>Development</td>
+											<td>MySoftLimited</td>
+											<td>17 April 2017</td>
+											<td>Active</td>
+											<td><button type="button" name="btn">Edit</button></td>
+											<td><button type="button" name="btn">View</button></td>
+										</tr>
+										<tr>
+											<td>12-0484-002</td>
+											<td>Md.Masud Ahmed</td>
+											<td>Wed Designer</td>
+											<td>Development</td>
+											<td>MySoftLimited</td>
+											<td>17 April 2017</td>
+											<td>Active</td>
+											<td><button type="button" name="btn">Edit</button></td>
+											<td><button type="button" name="btn">View</button></td>
+										</tr>
+										</table>
+									</div>
+								</div>
+								<div class="panel-footer">
+									
+				                    </div>
+								</div>
+							</div> <!-- end_col-md-12_row_02 -->
+						</div>
+					</div><!-- end_row_02 -->
+				</div><!-- end_col-md-12_main_row -->
+			</div><!-- main_row -->
+		</div>
+	</body>
+	</html>
